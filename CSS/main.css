@@ -1,33 +1,131 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-p{
-    background-color: rgb(245, 245, 245);
-    text-align: center;
-    size: 30px;
-    padding: 5px;
-    width: 100%;
-}
-.mode1{
-    display: flex;
-}
-.logopic{
-    width: 80%;
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 110px;
-}
-.list{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-.list li{
-    margin: 5px;
-}
+/* 網頁標頭排版開始 */
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    #fixed{
+        position: sticky ;
+        width: 100%;
+        top: 0%;
+        background-color: white;
+    }
+    p{
+        background-color: rgb(245, 245, 245);
+        text-align: center;
+        size: 30px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    /* header */
+    .mode1{
+        display: flex;
+    }
+    .logopic{
+        width: 80%;
+        margin: 10px 10px 25px 10px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 120px;
+        height: 80px;
+    }
+    .list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+    .list li{
+        margin: 5px;
+    }
+
+    /* nav */
+
+    .mode2{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        background-color: rgb(44, 44, 44);
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .mode2 li{
+        margin: 0 50px 0 50px;
+        font-size: 20px;
+    }
+    .mode2 a{
+        text-decoration: none;
+        color: white;
+    }
+    .mode2 a:hover{
+        opacity: 0.5;
+        font-size: 25px;
+        transition-duration: 0.3s;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .dropdown-content {
+        width: 120px;
+        display: none;
+        position: absolute;
+        background-color: rgb(44, 44, 44);
+        z-index: 2;
+    }
+    .dropdown-content a {
+        color: white;
+        padding: 12px 12px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+    }
+    .dropdown-content a:hover {
+        background-color: rgb(44, 44, 44);
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /* Footer */
+    .footer{
+        height: 100px;
+        
+        padding: 10px;
+        background-color: rgb(44, 44, 44);
+    }
+    .footer p{
+        background-color: rgb(44, 44, 44);
+        color: white;
+        letter-spacing: 5px;
+    }
+/* 網頁標頭排版結束 */
+
+/* 網頁內容開始 */
+    /* Active Ad */
+    .activead{
+        height: 600px;
+        margin: 30px 50px 30px 50px;
+        padding: 30px;
+        background-color: lightblue;
+    }
+
+    /* Hot */
+    .hot{
+        height: 500px;
+        margin: 50px;
+        padding: 30px;
+        background-color: lightcoral;
+    }
+
+
+
+
+
+
+  
 
 
