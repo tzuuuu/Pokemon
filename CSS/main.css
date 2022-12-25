@@ -36,6 +36,22 @@
         display: flex;
         align-items: center;
         z-index: 1;
+        position: relative;
+        left: 50px;
+    }
+    .list img{
+        width: 80%;
+    }
+    .list img:hover{
+        animation:scale-up-center .4s
+    }
+    @keyframes scale-up-center{
+        0%{
+            transform:scale initial
+        }
+        100%{
+            transform:scale(1.5)
+        }
     }
     .list li{
         margin: 5px;
