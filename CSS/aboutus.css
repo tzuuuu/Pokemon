@@ -1,0 +1,18 @@
+.slogan{
+    height: 300px;
+    margin: 30px 50px 0 50px;
+    padding: 30px;
+    background-color: lightblue;
+}
+.member{
+    height: 900px;
+    margin: 30px 50px 0 50px;
+    padding: 30px;
+    background-color: lightcoral;
+}
+.policy{
+    height: 200px;
+    margin: 30px 50px 30px 50px;
+    padding: 30px;
+    background-color: lightyellow;
+}
