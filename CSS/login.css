@@ -5,12 +5,11 @@
 }
 .tabs {
     justify-content: center;
-    align-items: center;
     width: 50%;
-    height: 400px;
-    position: relative;
-    left: 310px;
-    margin: 50px;
+    margin: 50px auto;
+    border: 10px solid #000;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -18,20 +17,38 @@
 label {
     width: 46%;
     cursor: pointer;
-    background: lightgray;
+    background: white;
     color: black;
     border-radius: 5px 5px 0 0;
     margin: 5px;
     padding: 10px;
-    float: left;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+@media screen and (max-width:768px){
+    label{
+        width: 40%;
+    }
+}
+
+input{
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+
+
+
 label:hover {
     background: lightgray;
 }
 
 input:checked+label {
-    background: white;
+    background: lightgray;
 }
 
 .tabs input:nth-of-type(1):checked~.panels .register:first-child,
@@ -45,10 +62,15 @@ input:checked+label {
     clear: both;
     width: 100%;
     background: white;
-    border-radius: 15px;
-    margin: 50px 0 0 -15px;
     text-align: center;
     line-height: 40px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    height: 20px;
 }
 
 
