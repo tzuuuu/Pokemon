@@ -38,7 +38,16 @@ label{
     width: 100%;
     padding: 10px 30px;
 }
-
+.content .list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.content .list .p-item{
+    width:25%;
+}
 .tab input:checked+label,
 .tab label:hover {
     opacity: 1;
