@@ -9,31 +9,10 @@
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/login.css">
     <link rel="stylesheet" href="../CSS/productdetail.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        purple: "#3d1f68",
-                        white: "#ffffff",
-                        neonpink: "#ed1779",
-                        neonpurple: "#8d62ab",
-                        black: "#000000",
-                        yellow: "#eefc1e"
-                    }
-
-                }
-
-            }
-        }
-    </script>
 </head>
 
 <body>
     <!--網頁標頭開始-->
-    <div id="gotop"></div>
-    <div id="fixed">
     <header>
         <p class="ontop">12/25聖誕節大促銷！</p>
         <div class="mode1">
@@ -66,74 +45,86 @@
         </ul>
     </nav>
 </div>
-<div class="gotop">
-    <a href="#gotop" class="goTopBtn"><img src="../image/up_icon.png" alt="Back To Top"></a>
-</div>
+<div class="">
+    <div class="gotop">
+        <a href="#gotop" class="goTopBtn"><img src="../image/up_icon.png" alt="Back To Top"></a>
+    </div>
     <!--網頁標頭結束-->
-    <section class="detail">
+    <div class="">
         <div class="content">
-    <div class="flex flex-col justify-start items-start">
-        <div class=" flex flex-row max-w-fit  text-2xl font-semibold justify-start mx-28 shadow-purple shadow-lg rounded-lg p-5 my-4">
-            <span>商品詳細資訊</span>
-        </div>
-        <div class="flex flex-row  w-[90vw] justify-between m-auto ">
-            <div><img src="kingj.jpg" class=" rounded-lg w-[30vw] max-h-[30vh]" /></div>
-            <div class="w-[30vw]">
-                <div class="text-lg font-semibold my-5"><span>King Jamessss</span></div>
-                <div class="text-lg font-semibold my-5"><span>$5000000</span></div>
-                <div class="flex flex-row text-lg font-semibold my-5">
-                    <span>數量: 50</span>
-                    <span>庫存: 1000</span>
+            <div class="prdouctDetail">
+               
+                <div class="p-list">
+                    <div class="p-img"><img src="../image/pica.png"  /></div>
+                    <div class="p-text">
+                        <div class=""><span>King Jamessss</span></div>
+                        <div class=""><span>$5000000</span></div>
+                        <div class="">
+                            <span>數量: </span>
+                            <button onclick="removeNum()">-</button>
+                            <span id="amount">5</span>
+                            <button onclick="addNum()">+</button>
+                            <span>庫存: 1000</span>
+                        </div>
+                        <div class="">
+                            <button class="mx-6 my-2">加入購物車</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="my-5 !w-[10vw] text-lg hover:opacity-30 duration-300 font-semibold border-2 bg-black text-white rounded-lg w-full">
-                    <button class="mx-6 my-2">加入購物車</button>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col w-[95vw] justify-center ">
-            <div
-                class=" flex flex-row max-w-fit  text-2xl font-semibold justify-start mx-28 shadow-purple shadow-lg rounded-lg p-5 my-4">
-                <span>商品描述</span>
-            </div>
-            <div class=" mx-28 justify-start items-center max-w-[80vw]
-            "><span>Lorem, ipsum dolor sit amet consectetur adipisicing
-                    elit.
-                    Voluptas suscipit rerum vel dignissimos
-                    facere, distinctio magnam voluptatem doloribus neque dolorem.
-                    Nam ad repudiandae et laudantium
-                    dolorum nemo a molestiae alias!
-                    >Lorem, ipsum dolor sit amet consectetur adipisicing
-                    elit.
-                    Voluptas suscipit rerum vel dignissimos
-                    facere, distinctio magnam voluptatem doloribus neque dolorem.
-                    Nam ad repudiandae et laudantium
-                    dolorum nemo a molestiae alias!
-                </span></div>
+                <div class="p-dep">
+                    <div class="p-title">
+                        <span>商品描述</span>
+                    </div>
+                    <div class=" "><span>Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Voluptas suscipit rerum vel dignissimos
+                            facere, distinctio magnam voluptatem doloribus neque dolorem.
+                            Nam ad repudiandae et laudantium
+                            dolorum nemo a molestiae alias!
+                            >Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Voluptas suscipit rerum vel dignissimos
+                            facere, distinctio magnam voluptatem doloribus neque dolorem.
+                            Nam ad repudiandae et laudantium
+                            dolorum nemo a molestiae alias!
+                        </span></div>
 
 
 
-        </div>
-        <div class="flex flex-row w-[100vw] justify-between mx-28">
-            <div class="w-[50vw]">
-                <div
-                    class=" flex flex-row max-w-fit  text-2xl font-semibold justify-start  shadow-purple shadow-lg rounded-lg p-5 my-4">
-                    <span>商品評分</span>
                 </div>
-                <div class=" text-xl font-semibold"><span>5 star 5 start 5start</span></div>
-            </div>
-            <div class="w-[50vw]">
-                <div
-                    class=" flex flex-row max-w-fit  text-2xl font-semibold justify-start  shadow-purple shadow-lg rounded-lg p-5 my-4">
-                    <span>商品評論</span>
-                </div>
-                <div class="w-[30vw] h-[30vh] shadow-md shadow"><textarea
-                        class="text-lg font-semibold w-[30vw] h-[30vh]">hahah king james!!</textarea>
+                <div class="p-score">
+                    <div class="p-score-list">
+                        <div class="p-title">
+                            <span>商品評分</span>
+                        </div>
+                    </div>
+                    <div class="p-score-list">
+                        <div class="p-score-text"><span>5 star 5 start 5start</span></div>
+                        <div class="p-score-text">
+                            <span>商品評論</span><textarea class="">hahah king james!!</textarea>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
 </div>
-</section>
+<script>
+    let n = Number(amount.innerText);
+   function removeNum() {
+    if(n <=1){
+        return;
+    }
+        n--;
+        amount.innerText = n
+
+     }
+     function addNum() {
+        n++;
+        amount.innerText = n
+     }
+</script>
     <!--網頁尾端開始-->
     <footer class="footer">
         <p>Copyright©2022 Stealing your Bae<br>All rights reserved</p>
