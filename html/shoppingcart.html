@@ -8,13 +8,15 @@
     <title>偷走你的寶</title>
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
 </head>
 
 <body>
     <!--網頁標頭開始-->
+    <div id="gotop"></div>
     <div id="fixed">
     <header>
-        <p>12/25聖誕節大促銷！</p>
+        <p class="ontop">12/25聖誕節大促銷！</p>
         <div class="mode1">
             <div class="logopic"><a href="index.html"><img src="../image/logo.png" alt="logo"></a></div>
             <ul class="list">
@@ -26,8 +28,8 @@
     </header>
     <nav>
         <ul class="mode2">
-            <li><a href="product.html">New In</a></li>
-            <li><a href="#hot">Hot!</a></li>
+            <li><a href="index.html#newin">New In</a></li>
+            <li><a href="index.html#hot">Hot!</a></li>
             <li>
                 <div class="dropdown">
                     <a href="product.html">All Product</a>
@@ -45,8 +47,123 @@
         </ul>
     </nav>
 </div>
+<div class="gotop">
+    <a href="#gotop" class="goTopBtn"><img src="../image/up_icon.png" alt="Back To Top"></a>
+</div>
     <!--網頁標頭結束-->
-    
+    <form action="post" class="cart">
+        <div class="cart-title">商品名稱</div>
+        <div class="cart-title">商品數量</div>
+        <div class="cart-title">小計</div>
+        <div class="cart-title">刪除</div>
+        <!--商品-->
+        <div class="container">
+            <div class="product">
+                <img src="../image/pica.png" alt="">
+                <div class="productname">
+                <h3>百變怪</h3>
+                <p>商品金額:<span class="productPrice">3300</span></p>
+                </div>
+            </div>
+            <div class="product info">
+                <div class="quantity">
+                    <input type="button" class="minusbtn" value="-">
+                    <input type="number" value="1" class="quantityNum" readonly>
+                    <input type="button" class="plusbtn" value="+">
+                </div>
+            </div>
+            <div class="product info">
+                <h3>$<span class="rowTotal">3300</span></h3>
+            </div>
+            <div class="product info">
+                <button class="removebtn" onclick="return false;"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="product">
+                <img src="../image/pica.png" alt="皮卡丘">
+                <div class="productname">
+                <h3>皮卡丘</h3>
+                <p>商品金額:<span class="productPrice">5900</span></p>
+                </div>
+            </div>
+            <div class="product info">
+                <div class="quantity">
+                    <input type="button" class="minusbtn" value="-">
+                    <input type="number" value="1" class="quantityNum" readonly>
+                    <input type="button" class="plusbtn" value="+">
+                </div>
+            </div>
+            <div class="product info">
+                <h3>$<span class="rowTotal">5900</span></h3>
+            </div>
+            <div class="product info">
+                <button class="removebtn" onclick="return false;"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="product">
+                <img src="../image/pica.png" alt="">
+                <div class="productname">
+                <h3>卡比獸</h3>
+                <p>商品金額:<span class="productPrice">2100</span></p>
+                </div>
+            </div>
+            <div class="product info">
+                <div class="quantity">
+                    <input type="button" class="minusbtn" value="-">
+                    <input type="number" value="1" class="quantityNum" readonly>
+                    <input type="button" class="plusbtn" value="+">
+                </div>
+            </div>
+            <div class="product info">
+                <h3>$<span class="rowTotal">2100</span></h3>
+            </div>
+            <div class="product info">
+                <button class="removebtn" onclick="return false;"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <hr width="100%" color="black">
+        <!--付款方式-->
+        <div class="bottom">
+            <div class="left">
+                <div class="pay">
+                    付款方式：<input type="radio" value="貨到付款" name="pay"> 貨到付款 <input type="radio" value="信用卡付款" name="pay"> 信用卡付款 <br>
+                </div>
+                <div class="delivery">
+                    運送方式：<input type="radio" value="宅配到府" name="pay"> 宅配到府 <input type="radio" value="超商取貨" name="pay"> 超商取貨 <br>
+                </div>
+                <div>備註：<br><textarea name="備註" id="" cols="50" rows="10"></textarea></div> 
+            </div>
+            <div class="line"></div>
+            <div class="right">
+                <p class="checkout">總金額:$<span class="subtotal" id="demo">11300</span></p>
+                <div class="submitbtn">
+                    <input type="submit" value="確定購買">
+                </div>
+            </div>
+        </div>
+        </form>
+
+    <script>
+       
+    function removeItem(removeButton){
+        var productRow = $(removeButton).parent().parent();
+        productRow.fadeOut(200, function() {
+            productRow.remove();
+            recalculate();
+    });
+    }
+
+    const removebtn = document.getElementsByClassName('removebtn');
+    for(let i=0;i<removebtn.length;i++){
+        removebtn[i].addEventListener('click', removeProduct);
+    }
+    function removeProduct(e){
+        console.log(e.target.parentNode.parentNode.remove())
+    }
+    </script>
 
     <!--網頁尾端開始-->
     <footer class="footer">
