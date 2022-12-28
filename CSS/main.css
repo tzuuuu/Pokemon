@@ -3,14 +3,16 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
     }
     #fixed{
         position: sticky ;
         width: 100%;
         top: 0%;
         background-color: white;
+        z-index: 99;
     }
-    p{
+    .ontop{
         background-color: rgb(245, 245, 245);
         text-align: center;
         size: 30px;
@@ -106,10 +108,17 @@
     .dropdown:hover .dropdown-content {
         display: block;
     }
+    .gotop{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: white ;
+        border-radius: 50%;
+        z-index: 50;
+    }
     /* Footer */
     .footer{
         height: 100px;
-        
         padding: 10px;
         background-color: rgb(44, 44, 44);
     }
@@ -117,6 +126,8 @@
         background-color: rgb(44, 44, 44);
         color: white;
         letter-spacing: 5px;
+        text-align: center;
+        line-height: 25px;
     }
 /* 網頁標頭排版結束 */
 
@@ -135,6 +146,14 @@
         margin: 50px;
         padding: 30px;
         background-color: lightcoral;
+    }
+
+    /* New */
+    .new{
+        height: 500px;
+        margin: 50px;
+        padding: 30px;
+        background-color: lightgoldenrodyellow;
     }
 
 
