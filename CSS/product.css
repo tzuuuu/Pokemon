@@ -1,0 +1,58 @@
+.series {
+    margin: 30px 50px 30px 50px;
+    background-color: #F0EFE4;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input{
+    display: none
+}
+
+label{
+    width: auto;
+    padding: 5px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.content {
+    order: 1;
+    display: none;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.tab input:checked+label,
+.tab label:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.tab input:checked+label+.content {
+    display: initial;
+}
+
+.title{
+    font-size: 20px;
+    text-align: center;
+}
+.product_name{
+    text-align: center;
+}
