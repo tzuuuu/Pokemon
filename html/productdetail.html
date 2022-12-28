@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偷走你的寶</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/productdetail.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        purple: "#3d1f68",
+                        white: "#ffffff",
+                        neonpink: "#ed1779",
+                        neonpurple: "#8d62ab",
+                        black: "#000000",
+                        yellow: "#eefc1e"
+                    }
+
+                }
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--網頁標頭開始-->
+    <div id="gotop"></div>
+    <div id="fixed">
+    <header>
+        <p class="ontop">12/25聖誕節大促銷！</p>
+        <div class="mode1">
+            <div class="logopic"><a href="index.html"><img src="../image/logo.png" alt="logo"></a></div>
+            <ul class="list">
+                <li><a href="shoppingcart.html"><img src="../image/shoppingcart_icon.png" alt="shopping Cart"></a></li>
+                <li><a href="login.html"><img src="../image/user_icon.png" alt="User"></a></li>
+                <li><a href="aboutus.html"><img src="../image/messages_icon.png" alt="Contact Us"></a></li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <ul class="mode2">
+            <li><a href="index.html#newin">New In</a></li>
+            <li><a href="index.html#hot">Hot!</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="product.html">All Product</a>
+                    <div class="dropdown-content">
+                        <a href="product.html">火/水/草/雷</a>
+                        <a href="product.html">格鬥/一般</a>
+                        <a href="product.html">飛行/幽靈</a>
+                        <a href="product.html">伊布</a>
+                        <a href="product.html">神獸</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="member.html">Member</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="gotop">
+    <a href="#gotop" class="goTopBtn"><img src="../image/up_icon.png" alt="Back To Top"></a>
+</div>
+    <!--網頁標頭結束-->
+    <section class="detail">
+    <div class="flex flex-col justify-start items-start">
+        <div class=" flex flex-row max-w-fit  text-2xl font-semibold justify-start mx-28 shadow-purple shadow-lg rounded-lg p-5 my-4">
+            <span>商品詳細資訊</span>
+        </div>
+        <div class="flex flex-row  w-[90vw] justify-between m-auto ">
+            <div><img src="kingj.jpg" class=" rounded-lg w-[30vw] max-h-[30vh]" /></div>
+            <div class="w-[30vw]">
+                <div class="text-lg font-semibold my-5"><span>King Jamessss</span></div>
+                <div class="text-lg font-semibold my-5"><span>$5000000</span></div>
+                <div class="flex flex-row text-lg font-semibold my-5">
+                    <span>數量: 50</span>
+                    <span>庫存: 1000</span>
+                </div>
+                <div class="my-5 !w-[10vw] text-lg hover:opacity-30 duration-300 font-semibold border-2 bg-black text-white rounded-lg w-full">
+                    <button class="mx-6 my-2">加入購物車</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col w-[95vw] justify-center ">
+            <div
+                class=" flex flex-row max-w-fit  text-2xl font-semibold justify-start mx-28 shadow-purple shadow-lg rounded-lg p-5 my-4">
+                <span>商品描述</span>
+            </div>
+            <div class=" mx-28 justify-start items-center max-w-[80vw]
+            "><span>Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Voluptas suscipit rerum vel dignissimos
+                    facere, distinctio magnam voluptatem doloribus neque dolorem.
+                    Nam ad repudiandae et laudantium
+                    dolorum nemo a molestiae alias!
+                    >Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Voluptas suscipit rerum vel dignissimos
+                    facere, distinctio magnam voluptatem doloribus neque dolorem.
+                    Nam ad repudiandae et laudantium
+                    dolorum nemo a molestiae alias!
+                </span></div>
+
+
+
+        </div>
+        <div class="flex flex-row w-[100vw] justify-between mx-28">
+            <div class="w-[50vw]">
+                <div
+                    class=" flex flex-row max-w-fit  text-2xl font-semibold justify-start  shadow-purple shadow-lg rounded-lg p-5 my-4">
+                    <span>商品評分</span>
+                </div>
+                <div class=" text-xl font-semibold"><span>5 star 5 start 5start</span></div>
+            </div>
+            <div class="w-[50vw]">
+                <div
+                    class=" flex flex-row max-w-fit  text-2xl font-semibold justify-start  shadow-purple shadow-lg rounded-lg p-5 my-4">
+                    <span>商品評論</span>
+                </div>
+                <div class="w-[30vw] h-[30vh] shadow-md shadow"><textarea
+                        class="text-lg font-semibold w-[30vw] h-[30vh]">hahah king james!!</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--網頁尾端開始-->
+    <footer class="footer">
+        <p>Copyright©2022 Stealing your Bae<br>All rights reserved</p>
+        <p>瀏覽次數：？？？</p>
+    </footer>
+    <!--網頁尾端結束-->
+</body>
+
+</html>
