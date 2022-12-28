@@ -8,13 +8,34 @@
     <title>偷走你的寶</title>
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/product.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        purple: "#3d1f68",
+                        white: "#ffffff",
+                        neonpink: "#ed1779",
+                        neonpurple: "#8d62ab",
+                        black: "#000000",
+                        yellow: "#eefc1e"
+                    }
+
+                }
+
+            }
+        }
+    </script>
 </head>
 
 <body>
     <!--網頁標頭開始-->
+    <div id="gotop"></div>
     <div id="fixed">
     <header>
-        <p>12/25聖誕節大促銷！</p>
+        <p class="ontop">12/25聖誕節大促銷！</p>
         <div class="mode1">
             <div class="logopic"><a href="index.html"><img src="../image/logo.png" alt="logo"></a></div>
             <ul class="list">
@@ -26,17 +47,17 @@
     </header>
     <nav>
         <ul class="mode2">
-            <li><a href="product.html">New In</a></li>
-            <li><a href="#hot">Hot!</a></li>
+            <li><a href="index.html#newin">New In</a></li>
+            <li><a href="index.html#hot">Hot!</a></li>
             <li>
                 <div class="dropdown">
                     <a href="product.html">All Product</a>
                     <div class="dropdown-content">
-                        <a href="product.html">火/水/草/雷</a>
-                        <a href="product.html">格鬥/一般</a>
-                        <a href="product.html">飛行/幽靈</a>
-                        <a href="product.html">伊布</a>
-                        <a href="product.html">神獸</a>
+                        <a href="product.html#tab1">火/水/草/雷</a>
+                        <a href="product.html#tab2">格鬥/一般</a>
+                        <a href="product.html#tab3">飛行/幽靈</a>
+                        <a href="product.html#tab4">伊布</a>
+                        <a href="product.html#tab5">神獸</a>
                     </div>
                 </div>
             </li>
@@ -45,8 +66,214 @@
         </ul>
     </nav>
 </div>
+<div class="gotop">
+    <a href="#gotop" class="goTopBtn"><img src="../image/up_icon.png" alt="Back To Top"></a>
+</div>
     <!--網頁標頭結束-->
-    
+    <section class="series">
+        <div class="verticalword"></div>
+        <div class="tab">
+            <input id="tab1" type="radio" name="tab" checked="checked" />
+            <label for="tab1">火/水/草/雷</label>
+            <div class="content">
+                <div class="item">
+                    <p class="title">-----火系------</p>
+                    <div class=" flex flex-row max-w-[95vw] flex-wrap justify-center items-center">
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">噴火龍</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>  
+                            <p class="product_name">風速狗</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">九尾</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="title">-----水系------</p>
+                    <div class=" flex flex-row max-w-[95vw] flex-wrap justify-center items-center">
+                        <div class=" rounded-lg mx-10 my-5 ">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">暴鯉龍</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">波加曼</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">水水獺</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">甲賀忍蛙</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="title">-----草系------</p>
+                    <div class=" flex flex-row max-w-[95vw] flex-wrap justify-center items-center">
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">噴火龍</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>  
+                            <p class="product_name">風速狗</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">九尾</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="title">-----雷系------</p>
+                    <div class=" flex flex-row max-w-[95vw] flex-wrap justify-center items-center">
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">噴火龍</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>  
+                            <p class="product_name">風速狗</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">九尾</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input id="tab2" type="radio" name="tab" />
+            <label for="tab2">格鬥/一般</label>
+            <div class="content">
+                <div class="item">
+                    <p class="title">-----格鬥系------</p>
+                    <div class=" flex flex-row max-w-[95vw] flex-wrap justify-center items-center">
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">噴火龍</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>  
+                            <p class="product_name">風速狗</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">九尾</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="title">-----一般系------</p>
+                    <div class=" flex flex-row max-w-[95vw] flex-wrap justify-center items-center">
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">噴火龍</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>  
+                            <p class="product_name">風速狗</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">九尾</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input id="tab3" type="radio" name="tab" />
+            <label for="tab3">飛行/幽靈</label>
+            <div class="content">
+                <div class="item">
+                    <p class="title">-----飛行系------</p>
+                    <div class=" flex flex-row max-w-[95vw] flex-wrap justify-center items-center">
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">噴火龍</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>  
+                            <p class="product_name">風速狗</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">九尾</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="title">-----幽靈系------</p>
+                    <div class=" flex flex-row max-w-[95vw] flex-wrap justify-center items-center">
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">噴火龍</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>  
+                            <p class="product_name">風速狗</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">九尾</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <input id="tab4" type="radio" name="tab" />
+            <label for="tab4">伊布</label>
+            <div class="content">
+                <div class="item">
+                    <p class="title">-----伊布------</p>
+                    <div class=" flex flex-row max-w-[95vw] flex-wrap justify-center items-center">
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">噴火龍</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>  
+                            <p class="product_name">風速狗</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">九尾</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <input id="tab5" type="radio" name="tab" />
+            <label for="tab5">神獸</label>
+            <div class="content">
+                <div class="item">
+                    <p class="title">-----神獸------</p>
+                    <div class=" flex flex-row max-w-[95vw] flex-wrap justify-center items-center">
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">噴火龍</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>  
+                            <p class="product_name">風速狗</p><br>
+                        </div>
+                        <div class=" rounded-lg mx-10 my-5">
+                            <a href="productdetail.html"><img src="../image/pica.png" class=" rounded-lg w-[18vw]" /></a>
+                            <p class="product_name">九尾</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--網頁尾端開始-->
     <footer class="footer">
