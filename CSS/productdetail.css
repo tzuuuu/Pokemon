@@ -1,0 +1,8 @@
+.detail {
+    margin: 30px 50px 30px 50px;
+    background-color: #F0EFE4;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
