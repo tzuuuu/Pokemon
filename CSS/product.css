@@ -42,8 +42,7 @@ label{
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 .content .list .p-item{
     width:25%;
