@@ -32,11 +32,11 @@
                 <div class="dropdown">
                     <a href="product.html">All Product</a>
                     <div class="dropdown-content">
-                        <a href="product.html">火/水/草/雷</a>
-                        <a href="product.html">格鬥/一般</a>
-                        <a href="product.html">飛行/幽靈</a>
-                        <a href="product.html">伊布</a>
-                        <a href="product.html">神獸</a>
+                        <a href="product.html?q=1#tab1">火/水/草/雷</a>
+                        <a href="product.html?q=2#tab2">格鬥/一般</a>
+                        <a href="product.html?q=3#tab3">飛行/幽靈</a>
+                        <a href="product.html?q=4#tab4">伊布</a>
+                        <a href="product.html?q=5#tab5">神獸</a>
                     </div>
                 </div>
             </li>
@@ -49,16 +49,114 @@
         <a href="#gotop" class="goTopBtn"><img src="../image/up_icon.png" alt="Back To Top"></a>
     </div>
     <!--網頁標頭結束-->
-    <section class="info">會員基本資料</section>
-    <section class="record-consume">消費紀錄</section>
-    <section class="record-review">評論與評分紀錄</section>
-
+    <section class="member">
+        <div class="left">
+            <input checked id="info" name="member" type="radio" style="opacity: 0;">
+            <label for="info">會員基本資料</label>
+            <input id="record-consume" name="member" type="radio" style="opacity: 0;">
+            <label for="record-consume">消費紀錄</label>
+            <input id="record-review" name="member" type="radio" style="opacity: 0;">
+            <label for="record-review">評論與評分紀錄</label>
+        </div>
+        <div class="panel">
+            <div class="info">
+                <div>
+                    <p class="info-title">會員基本資料</p>
+                    <form action="">
+                        電子郵件：<input type="email" name="email" value=""><br>
+                        密碼：<input type="password" name="password" value=""><br>
+                        手機號碼：<input type="text" name="phone" value=""><br>
+                        性別：<input type="radio" name="gender" id=""> 男 <input type="radio" name="gender" id=""> 女 <br>
+                        生日：<input type="date" name="bday" value=""><br>
+                        安全提示問題一：最喜歡的書籍名稱？<br>
+                        <input type="text" name="q1" size="40px"><br>
+                        安全提示問題二：最喜歡的電影名字？<br>
+                        <input type="text" name="q2" size="40px"><br>
+                        <input type="submit" value="確認修改資料">
+                        <input type="submit" value="登出">
+                    </form>
+                </div>
+            </div>
+            <div class="record-consume">
+                <div>
+                    <p class="info-title">會員基本資料</p>
+                    <form action="">
+                        電子郵件：<input type="email" name="email" value=""><br>
+                        密碼：<input type="password" name="password" value=""><br>
+                        手機號碼：<input type="text" name="phone" value=""><br>
+                        性別：<input type="radio" name="gender" id=""> 男 <input type="radio" name="gender" id=""> 女 <br>
+                        生日：<input type="date" name="bday" value=""><br>
+                        安全提示問題一：最喜歡的書籍名稱？<br>
+                        <input type="text" name="q1" size="40px"><br>
+                        安全提示問題二：最喜歡的電影名字？<br>
+                        <input type="text" name="q2" size="40px"><br>
+                        <input type="submit" value="確認修改資料">
+                        <input type="submit" value="登出">
+                    </form>
+                </div>
+            </div>
+            <div class="record-review">
+                <div>
+                    <p class="info-title">會員基本資料</p>
+                    <form action="">
+                        電子郵件：<input type="email" name="email" value=""><br>
+                        密碼：<input type="password" name="password" value=""><br>
+                        手機號碼：<input type="text" name="phone" value=""><br>
+                        性別：<input type="radio" name="gender" id=""> 男 <input type="radio" name="gender" id=""> 女 <br>
+                        生日：<input type="date" name="bday" value=""><br>
+                        安全提示問題一：最喜歡的書籍名稱？<br>
+                        <input type="text" name="q1" size="40px"><br>
+                        安全提示問題二：最喜歡的電影名字？<br>
+                        <input type="text" name="q2" size="40px"><br>
+                        <input type="submit" value="確認修改資料">
+                        <input type="submit" value="登出">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--網頁尾端開始-->
     <footer class="footer">
         <p>Copyright©2022 Stealing your Bae<br>All rights reserved</p>
         <p>瀏覽次數：？？？</p>
     </footer>
     <!--網頁尾端結束-->
+    <script>
+        const queryStr = new URL(window.location.href).searchParams.get('q')
+        console.log(queryStr)
+       
+        function render(){
+                clearContent();
+                if(queryStr == 1 || queryStr==null){
+                    q1.style.display = "block";
+                    return;
+                }
+                if(queryStr == 2){
+                    q2.style.display = "block";
+                    return;
+                }
+                if(queryStr == 3){
+                    q3.style.display = "block";
+                    return;
+                }
+                if(queryStr == 4){
+                    q4.style.display = "block";
+                    return;
+                }
+                if(queryStr == 5){
+                    q5.style.display = "block";
+                    return;
+                }
+        }
+        render();
+        function clearContent(){
+                q1.style.display = "none";
+                q2.style.display = "none";
+                q3.style.display = "none";
+                q4.style.display = "none";
+                q5.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
