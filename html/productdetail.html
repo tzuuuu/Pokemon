@@ -34,11 +34,11 @@
                 <div class="dropdown">
                     <a href="product.html">All Product</a>
                     <div class="dropdown-content">
-                        <a href="product.html">火/水/草/雷</a>
-                        <a href="product.html">格鬥/一般</a>
-                        <a href="product.html">飛行/幽靈</a>
-                        <a href="product.html">伊布</a>
-                        <a href="product.html">神獸</a>
+                        <a href="product.html?q=1#tab1">火/水/草/雷</a>
+                        <a href="product.html?q=2#tab2">格鬥/一般</a>
+                        <a href="product.html?q=3#tab3">飛行/幽靈</a>
+                        <a href="product.html?q=4#tab4">伊布</a>
+                        <a href="product.html?q=5#tab5">神獸</a>
                     </div>
                 </div>
             </li>
@@ -122,28 +122,63 @@
             </div>
         </div>
     
-
-<script>
-    let n = Number(amount.innerText);
-   function removeNum() {
-    if(n <=1){
-        return;
-    }
-        n--;
-        amount.innerText = n
-
-     }
-     function addNum() {
-        n++;
-        amount.innerText = n
-     }
-</script>
     <!--網頁尾端開始-->
     <footer class="footer">
         <p>Copyright©2022 Stealing your Bae<br>All rights reserved</p>
         <p>瀏覽次數：？？？</p>
     </footer>
     <!--網頁尾端結束-->
+    <script>
+        let n = Number(amount.innerText);
+       function removeNum() {
+        if(n <=1){
+            return;
+        }
+            n--;
+            amount.innerText = n
+    
+         }
+         function addNum() {
+            n++;
+            amount.innerText = n
+         }
+    </script>    
+    <script>
+        const queryStr = new URL(window.location.href).searchParams.get('q')
+        console.log(queryStr)
+       
+        function render(){
+                clearContent();
+                if(queryStr == 1 || queryStr==null){
+                    q1.style.display = "block";
+                    return;
+                }
+                if(queryStr == 2){
+                    q2.style.display = "block";
+                    return;
+                }
+                if(queryStr == 3){
+                    q3.style.display = "block";
+                    return;
+                }
+                if(queryStr == 4){
+                    q4.style.display = "block";
+                    return;
+                }
+                if(queryStr == 5){
+                    q5.style.display = "block";
+                    return;
+                }
+        }
+        render();
+        function clearContent(){
+                q1.style.display = "none";
+                q2.style.display = "none";
+                q3.style.display = "none";
+                q4.style.display = "none";
+                q5.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
