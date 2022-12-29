@@ -1,18 +1,83 @@
-.info{
-    height: 600px;
-    margin: 30px 50px 30px 50px;
-    padding: 30px;
-    background-color: lightblue;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.record-consume{
-    height: 600px;
-    margin: 30px 50px 30px 50px;
-    padding: 30px;
-    background-color: lightblue;
+.member {
+    width: 70%;
+    justify-content: center;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
-.record-review{
-    height: 600px;
-    margin: 30px 50px 30px 50px;
-    padding: 30px;
-    background-color: lightblue;
+
+
+label {
+    cursor: pointer;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+@media screen and (max-width:768px){
+    label{
+        width: 40%;
+    }
+}
+
+input{
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+
+
+
+label:hover {
+    background: lightgray;
+}
+
+input:checked+label {
+    background: lightgray;
+}
+
+.tabs input:nth-of-type(1):checked~.panels .register:first-child,
+.tabs input:nth-of-type(2):checked~.panels .login:nth-child(2),
+.tabs input:nth-of-type(4):checked~.panels .panel:last-child {
+    opacity: 1;
+    display: block;
+}
+
+.panel {
+    clear: both;
+    width: 100%;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    height: 20px;
+}
+
+
+.info,.record-consume,.record-review{
+    width: 100%;
+    opacity: 0;
+    display: none;
+    background: white;
+    border-radius: 15px;
+}
+
+
+
