@@ -1,6 +1,6 @@
 .detail {
     margin: 30px 50px 30px 50px;
-    background-color: #F0EFE4;
+    background-color: lightblue;
     height: auto;
     display: flex;
     justify-content: center;
@@ -37,43 +37,103 @@
 }
 
 .p-dep{
+    margin: 30px 0 30px 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .p-dep .p-title{
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 20px;
     font-weight: 700;
 }
+.p-detail{
+    margin: auto;
+} 
 
 .p-score{
     display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
+    width: auto;
+    margin: 30px 0 30px 0;
 }
 
 .p-score .p-title{
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 20px;
     font-weight: 700;
 }
 
-.p-score .p-score-list{
-    display: flex;
-    justify-content: center;
+.p-score-list{
+    width: 50%;
+    margin-left: 30px;
 }
-.p-score .p-score-text{
+.p-comment,.p-review{
+    margin-left: 50px;
+}
+.p-review{
+    border: black solid 2px;
+    padding: 10px 30px 10px 30px;
+}
+.p-comment input,textarea{
+    margin-top: 20px;
+    border-radius: 5px solid;
+    cursor: pointer;
+}
+hr{
+    background-color: black;
+    border-color: black;
+}
+.straight{
+    background-color: black;
+    border-color: black;
+    height: auto;
+}
+
+/* .p-score .p-score-text{
     display: flex;
     flex-direction: column;
     margin: 0 50px;
-}
-.p-score .p-score-text textarea{
-    width:250px;
-    height: 150px;
-}
+} */
+
+
+/* 星等 */
+.rating {
+    transform: rotateY(180deg);
+    display: flex;
+    width: 35%;
+  }
+  .rating input {
+    display: none;
+  }
+  .rating label {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+  .rating input:checked+label {
+    background-color: transparent;
+  }
+  .rating label:before {
+    content: '★';
+    display: block;
+    font-size: 25px;
+    color: #ebebeb;
+  }
+  .rating label:after {
+    content: '★';
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    color: rgb(243, 213, 114);
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+    text-shadow: 0;
+  }
+  .rating label:hover:after,
+  .rating label:hover~label:after,
+  .rating input:checked~label:after {
+    opacity: 1;
+  }
+  
