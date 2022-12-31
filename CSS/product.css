@@ -1,6 +1,51 @@
+/* link-list */
+.link-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin:30px 50px 30px 50px;
+    border: 3px solid #22467D;
+    border-radius: 15px;
+}
+
+.link-list a{
+    display:block;
+    text-decoration: none;
+    width:auto;
+    padding: 5px 20px;
+    color:#000;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: #BDC8D9;
+    opacity: .5;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.link-list a:hover{
+    opacity: 1;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+@keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.link-list a.action{
+    opacity: 1;
+}
+
+/* series */
 .series {
     margin: 0 50px 30px 50px;
-    background-color: #F0EFE4;
+    border: 3px solid #22467D;
+    border-radius: 15px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -15,21 +60,6 @@
 
 input{
     display: none
-}
-
-label{
-    width: auto;
-    padding: 5px 20px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    color: black;
-    font-weight: bolder;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.5;
 }
 
 .content {
@@ -56,41 +86,16 @@ label{
 .tab input:checked+label+.content {
     display: initial;
 }
-
 .title{
-    font-size: 20px;
+    margin: 50px 400px 50px 400px;
+    border-bottom: 2px solid #22467D;
+    font-size: 24px;
+    font-weight: 700;
     text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
 }
 .product_name{
     text-align: center;
 }
 
-.link-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin:30px 50px 0 50px;
-    background-color:#F0EFE4 ;
-}
-
-.link-list a{
-    display:block;
-    text-decoration: none;
-    width:120px;
-    padding: 5px 20px;
-    color:#000;
-    border-radius: 5px;
-    margin:5px;
-    cursor: pointer;
-    background-color: #D3D3D3;
-    opacity: .5;
-    text-align: center;
-    font-weight: 700;
-}
-.link-list a:hover{
-    opacity: 1;
-}
-.link-list a.action{
-    opacity: 1;
-}
