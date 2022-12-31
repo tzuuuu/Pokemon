@@ -34,11 +34,11 @@
                 <div class="dropdown">
                     <a href="product.html">All Product</a>
                     <div class="dropdown-content">
-                        <a href="product.html?q=1#tab1">火/水/草/雷</a>
-                        <a href="product.html?q=2#tab2">格鬥/一般</a>
-                        <a href="product.html?q=3#tab3">飛行/幽靈</a>
-                        <a href="product.html?q=4#tab4">伊布</a>
-                        <a href="product.html?q=5#tab5">神獸</a>
+                        <a href="product.html?q=1">火/水/草/雷</a>
+                        <a href="product.html?q=2">格鬥/一般</a>
+                        <a href="product.html?q=3">飛行/幽靈</a>
+                        <a href="product.html?q=4">伊布</a>
+                        <a href="product.html?q=5">神獸</a>
                     </div>
                 </div>
             </li>
@@ -51,11 +51,18 @@
         <a href="#gotop" class="goTopBtn"><img src="../image/up_icon.png" alt="Back To Top"></a>
     </div>
     <!--網頁標頭結束-->
+    <div class="link-list">
+        <a href="product.html?q=1" id="link1">火/水/草/雷</a>
+        <a href="product.html?q=2" id="link2">格鬥/一般</a>
+        <a href="product.html?q=3" id="link3">飛行/幽靈</a>
+        <a href="product.html?q=4" id="link4">伊布</a>
+        <a href="product.html?q=5" id="link5">神獸</a>
+    </div>
     <section class="series">
         <div class="verticalword"></div>
+        
         <div class="tab">
-            <input id="tab1" type="radio" name="tab" checked="checked" />
-            <label for="tab1">火/水/草/雷</label>
+           
             <div class="content" id="q1">
                 <div class="item">
                     <p class="title">-----火系------</p>
@@ -131,8 +138,6 @@
                 </div>
             </div>
 
-            <input id="tab2" type="radio" name="tab" />
-            <label for="tab2">格鬥/一般</label>
             <div class="content" id="q2">
                 <div class="item">
                     <p class="title">-----格鬥系------</p>
@@ -169,9 +174,7 @@
                     </div>
                 </div>
             </div>
-
-            <input id="tab3" type="radio" name="tab" />
-            <label for="tab3">飛行/幽靈</label>
+          
             <div class="content" id="q3">
                 <div class="item">
                     <p class="title">-----飛行系------</p>
@@ -209,9 +212,7 @@
                 </div>
             </div>
         
-
-            <input id="tab4" type="radio" name="tab" />
-            <label for="tab4">伊布</label>
+          
             <div class="content" id="q4">
                 <div class="item">
                     <p class="title">-----伊布------</p>
@@ -232,8 +233,6 @@
                 </div>
             </div>
         
-            <input id="tab5" type="radio" name="tab" />
-            <label for="tab5">神獸</label>
             <div class="content" id="q5">
                 <div class="item">
                     <p class="title">-----神獸------</p>
@@ -270,22 +269,27 @@
                 clearContent();
                 if(queryStr == 1 || queryStr==null){
                     q1.style.display = "block";
+                    link1.classList.add('action');
                     return;
                 }
                 if(queryStr == 2){
                     q2.style.display = "block";
+                    link2.classList.add('action');
                     return;
                 }
                 if(queryStr == 3){
                     q3.style.display = "block";
+                    link3.classList.add('action');
                     return;
                 }
                 if(queryStr == 4){
                     q4.style.display = "block";
+                    link4.classList.add('action');
                     return;
                 }
                 if(queryStr == 5){
                     q5.style.display = "block";
+                    link5.classList.add('action');
                     return;
                 }
         }
