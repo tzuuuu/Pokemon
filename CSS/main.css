@@ -26,12 +26,10 @@
         display: flex;
     }
     .logopic{
-        width: 80%;
-        margin: 10px 10px 10px 10px;
+        /* width: 80%;
+        margin: 10px 10px 10px 10px; */
         display: flex;
         justify-content: center;
-        position: relative;
-        left: 120px;
     }
     .list{
         list-style: none;
@@ -63,12 +61,13 @@
 
     .mode2{
         width: 100%;
-        height: 50px;
+        height: auto;
         display: flex;
-        background-color: #22467D;
+        background-color: white;
         justify-content: center;
         align-items: center;
         list-style: none;
+        border-bottom: 3px solid #22467D;
     }
     .mode2 li{
         margin: 0 50px 0 50px;
@@ -76,12 +75,23 @@
     }
     .mode2 a{
         text-decoration: none;
-        color: white;
+        color: black;
     }
     .mode2 a:hover{
         opacity: 0.5;
         font-size: 25px;
         transition-duration: 0.3s;
+    }
+    .icon-list{
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+    .icon-list img{
+        margin: 5px;
+    }
+    .icon-list img:hover{
+        animation:scale-up-center .4s
     }
     .dropdown {
         position: relative;
