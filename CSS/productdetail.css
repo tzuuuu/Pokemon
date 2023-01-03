@@ -66,6 +66,9 @@
     border: 1px solid #22467D;
     cursor: pointer;
 }
+.p-text button:hover{
+    background-color: #BDC8D9;
+}
 .p-dep .p-title{
     margin-bottom: 30px;
     font-size: 25px;
@@ -98,21 +101,33 @@
     margin-left: 50px;
 }
 .p-review{
-    border: black solid 2px;
+    border: #22467D solid 2px;
     padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    line-height: 30px;
 }
 .p-comment input,textarea{
     margin-top: 20px;
     border-radius: 5px solid;
     cursor: pointer;
+    border: 1px solid #22467D;
+    border-radius: 5px;
+}
+.p-comment .p-send{
+    padding: 5px 10px 5px 10px;
+    height: 30px;
+    margin-left: 120px;
+}
+.p-send:hover{
+    background-color: #BDC8D9;
 }
 hr{
-    background-color: black;
-    border-color: black;
+    background-color: #22467D;
+    border-color: #22467D;
 }
 .straight{
-    background-color: black;
-    border-color: black;
+    background-color: #22467D;
+    border-color: #22467D;
     height: auto;
 }
 .straight .p-title{
@@ -131,6 +146,7 @@ hr{
     transform: rotateY(180deg);
     display: flex;
     width: 35%;
+    margin-left: 20px;
   }
   .rating input {
     display: none;
@@ -139,6 +155,7 @@ hr{
     cursor: pointer;
     background-color: transparent;
     padding: 0;
+    margin: 0;
   }
   .rating input:checked+label {
     background-color: transparent;
