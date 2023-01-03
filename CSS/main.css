@@ -19,6 +19,7 @@
         size: 30px;
         padding: 5px;
         width: 100%;
+        margin: 0;
     }
 
     /* header */
@@ -68,6 +69,8 @@
         align-items: center;
         list-style: none;
         border-bottom: 3px solid #22467D;
+        margin: 0;
+        padding: 0;
     }
     .mode2 li{
         margin: 0 50px 0 50px;
@@ -81,6 +84,7 @@
         opacity: 0.5;
         font-size: 25px;
         transition-duration: 0.3s;
+        color: black;
     }
     .icon-list{
         display: flex;
@@ -204,7 +208,6 @@
         border: 3px solid #22467D;
         border-radius: 15px;
     }
-
 
 
 
