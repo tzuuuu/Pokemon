@@ -83,8 +83,15 @@ input{
     padding: 5px 10px 5px 10px;
     font-weight: bolder;
 }
+input[type="text"]{
+    width: 500px;
+}
 input[type="submit"]:hover{
     background-color: #BDC8D9;
+}
+.b-title{
+    font-size: 17px;
+    font-weight: bolder;
 }
 .b-text{
     color: gray;
