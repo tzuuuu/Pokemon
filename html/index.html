@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/login.css">
     <link rel="shortcut icon" href="../image/icon.ico">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -61,7 +64,36 @@
     </div>
     <!--網頁標頭結束-->
 
-    <section class="activead">動態廣告</section>
+    <section class="slide"></section>
+    <div id="slideshow" class="carousel side" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="slide-pic" src="../image/範例1.jpg">
+            </div>
+
+            <div class="carousel-item">
+                <img class="slide-pic" src="../image/範例2.jpg">
+            </div>
+
+            <div class="carousel-item">
+                <img class="slide-pic" src="../image/範例3.jpg">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
     <section id="hot" class="hot">
         <p class="hot-t">HOT!</p>
         <div class="hot-items">
