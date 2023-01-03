@@ -106,18 +106,18 @@
         width: 120px;
         display: none;
         position: absolute;
-        background-color: #22467D;
+        background-color: white;
         z-index: 2;
+        border: 1px solid #22467D
     }
     .dropdown-content a {
-        color: white;
         padding: 12px 12px;
         text-decoration: none;
         display: block;
         font-size: 16px;
     }
     .dropdown-content a:hover {
-        background-color: #22467D;
+        background-color: white;
     }
     .dropdown:hover .dropdown-content {
         display: block;
@@ -190,6 +190,8 @@
     }
     .rank{
         font-size: 30px;
+        margin: 0;
+        padding: 0;
     }
     .hot-pic:hover{
         animation:scale-up-center .4s
