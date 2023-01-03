@@ -8,6 +8,7 @@
     width: 70%;
     margin: 50px auto;
     border: 3px solid #22467D;
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -63,6 +64,7 @@ input:checked+label {
 
 .panels {
     border-top: 2px solid #22467D;
+    border-radius: 0 0 15px 15px;
     clear: both;
     width: 100%;
     background: white;
@@ -71,10 +73,13 @@ input:checked+label {
     height: 500px;
     display: flex;
     align-items: center;
+    letter-spacing: 3px;
 }
 
 input{
     height: 20px;
+    border: 1px solid #22467D;
+    border-radius: 5px;
 }
 
 
@@ -92,6 +97,7 @@ input{
     display: none;
     background: white;
     border-radius: 15px;
+    line-height: 60px;
 }
 
 .submit{
@@ -102,4 +108,7 @@ input{
     padding: 5px 20px 5px 20px;
     height: auto;
     width: auto;
+}
+.submit:hover{
+    background-color: #BDC8D9;
 }
