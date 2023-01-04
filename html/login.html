@@ -90,7 +90,7 @@
                 電子郵件：<input type="email" name="email"><br>
                 密碼：<input type="password" name="password"><br>
                 <input type="submit" value="登入" class="submit">
-                <input type="submit" value="忘記密碼" class="submit"><br>
+                <input type="submit" value="忘記密碼" class="submit" onclick="forget()"><br>
                 </form>
             </div>
         </div>
@@ -103,6 +103,11 @@
         <p>瀏覽次數：？？？</p>
     </footer>
     <!--網頁尾端結束-->
+    <script>
+        function forget(){
+            email=prompt("請輸入註冊之電子郵件：","example@gmail.com")
+        }
+    </script>
     <script>
         const queryStr = new URL(window.location.href).searchParams.get('q')
         console.log(queryStr)
