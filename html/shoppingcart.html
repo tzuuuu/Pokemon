@@ -149,7 +149,7 @@
             </div>
             <div class="line"></div>
             <div class="right">
-                <p class="checkout">總金額:$<span class="subtotal" id="demo">11300</span></p>
+                <p class="checkout">總金額:$<span class="subtotal" id="demo"></span></p>
                 <div class="submitbtn">
                     <input type="submit" value="確定購買">
                 </div>
@@ -163,6 +163,86 @@
         <p>瀏覽次數：？？？</p>
     </footer>
     <!--網頁尾端結束-->
+    <script>
+        var increment = document.getElementsByClassName("plusbtn");
+        for (var i = 0; i < increment.length; i++) {
+            //為a標簽添加index屬性，用於記錄下標
+            increment[i].index = i;
+
+            //點擊+數量增加的功能函數
+            increment[i].onclick = function () {
+                var flag = this.index;
+
+                //獲取當前按鈕對應的數量框
+                var q = document.getElementsByClassName("quantityNum")[flag];
+
+                var newvalue = parseInt(q.value) + 1;
+
+                q.setAttribute('value', newvalue);
+
+                //更新此商品對應的‘小計’
+                changeSum(flag, newvalue);
+            }
+        }
+
+        var decrement=document.getElementsByClassName('minusbtn');
+        //点击-数量减少的功能函数
+        for(var j=0;j<decrement.length;j++)
+        {
+            decrement[j].index=j;
+
+            decrement[j].onclick=function()
+            {
+                var flag=this.index;
+                //获取当前a标签对应的那个数量框
+            var q=document.getElementsByClassName("quantityNum")[flag];
+
+            if(parseInt(q.value)>1)
+            {
+                var newvalue=parseInt(q.value)-1;
+
+                q.setAttribute('value',newvalue);
+
+                changeSum(flag,newvalue);
+            }
+            }
+        }
+
+        //更新每個商品的‘小計’
+        function changeSum(flag, num) {
+            //獲取對應商品單價所在的標簽
+            var temp = document.getElementsByClassName("productPrice")[flag];
+
+            //獲取商品單價
+            var unitPrice = temp.innerHTML;
+
+            //計算新的小計價格
+            var newPrice = (parseInt(unitPrice) * (num*1));
+            //獲取當前“小計”的標簽
+            var sum = document.getElementsByClassName("rowTotal")[flag];
+
+            sum.innerHTML = newPrice;
+
+            calculate();
+        }
+
+        
+
+        function calculate(){
+            var items=document.getElementsByClassName('product');
+
+            var sumPrice=0;
+
+            var p=document.getElementsByClassName('rowTotal');
+
+            for(var m=0;m<items.length;m++)
+            {
+                sumPrice=sumPrice+parseInt(p[m].innerHTML);
+            }
+
+            document.getElementsByClassName("subtotal")[0].innerHTML=sumPrice;
+        }
+    </script>
     <script>
         const queryStr = new URL(window.location.href).searchParams.get('q')
         console.log(queryStr)
