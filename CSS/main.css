@@ -162,7 +162,8 @@
     /* Active Ad */
     .slide{
         height: auto;
-        margin: 30px auto 30px auto;
+        margin: 30px 50px 30px 50px;
+        justify-items: center;
     }
        /* Hot */
     .hot{
