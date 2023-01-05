@@ -160,11 +160,9 @@
 
 /* 網頁內容開始 */
     /* Active Ad */
-    .activead{
-        height: 600px;
+    .slide{
+        height: auto;
         margin: 30px 50px 30px 50px;
-        padding: 30px;
-        background-color: lightblue;
     }
        /* Hot */
     .hot{
