@@ -86,13 +86,25 @@
         transition-duration: 0.3s;
         color: black;
     }
+    .search{
+        display: flex;
+        align-items: center;
+    }
+    .search input{
+        height: 30px;
+        margin: 10px;
+    }
+    .search img{
+        height: 30px;
+    }
     .icon-list{
         display: flex;
         align-items: center;
-        margin: 20px;
+        margin: 10px;
     }
     .icon-list img{
         margin: 5px;
+        height: 35px;
     }
     .icon-list img:hover{
         animation:scale-up-center .4s
