@@ -27,6 +27,10 @@
   padding: 30px;
   border: 3px solid #22467d;
   border-radius: 15px;
+  font-family: DFKai-sb;
+}
+h2{
+  font-family: DFKai-sb;
 }
 
 .slogan h2,
@@ -43,6 +47,8 @@
   margin: 50px 0;
   text-align: center;
   position: relative;
+  font-family: DFKai-sb;
+  font-size: 30px;
 }
 .member h3::before {
   content: "";
@@ -120,4 +126,38 @@
 }
 .member .memberList .memberItem p {
   width: 80%;
+}
+
+h4{
+  font-family: DFKai-sb;
+}
+.word{
+  font-size: 13px;
+  margin-left: 30px;
+  font-family: DFKai-sb;
+}
+.wordone{
+  font-size: 1px;
+  font-family: DFKai-sb;
+}
+.wordtwo{
+  font-size: 15px;
+  margin-left: 30px;
+  font-family: DFKai-sb;
+}
+
+.slogan{
+  text-align: center;
+  font-family:DFKai-sb;
+  font-size: 18px;
+}
+
+h1{
+  font-size: 30px;
+  font-family:  DFKai-sb;
+  text-align: center;
+}
+
+.rule{
+  font-family:  DFKai-sb;
 }
