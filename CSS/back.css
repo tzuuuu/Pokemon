@@ -70,7 +70,7 @@ input:checked+label {
     background: white;
     text-align: center;
     line-height: 40px;
-    height: 500px;
+    height: auto;
     display: flex;
     align-items: center;
     letter-spacing: 3px;
