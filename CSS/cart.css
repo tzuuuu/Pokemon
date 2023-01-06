@@ -9,7 +9,8 @@
     border-radius: 15px;
     letter-spacing: 5px;
     text-align: center;
-    border: 3px solid #22467D;
+    border: 3px solid #193257;
+    background-color: #FEFFE4;
 }
 .cart-title,
 .product {
@@ -20,14 +21,14 @@
     letter-spacing: 5px;
 }
 .cart-title {
-    background: white;
+    background: #FEFFE4;
     font-size: 20px;
 }
 .cart-title::after  {
     content: "";
     height: 2px;
     display: block;
-    background: #22467D;
+    background: #193257;
 }
 
 .container {
@@ -36,7 +37,8 @@
 .product {
     font-size: 15px;
     letter-spacing: 5px;
-    background: #BDC8D9;
+    background: #54777D;
+    color: white;
 }
 .productname{
     margin-top: 80px;
@@ -72,7 +74,7 @@
 }
 .product .minusbtn:hover,
 .product .plusbtn:hover {
-    background: lightgray;
+    background: #E7E3C5;
     cursor: pointer;
 }
 
@@ -119,12 +121,12 @@ hr {
     margin: 20px;
 }
 .left textarea{
-    border: 1px solid #22467D;
+    border: 1px solid #193257;
     border-radius: 5px;
     width: 450px;
 }
 .line{
-    border: 2px solid #22467D;
+    border: 2px solid #193257;
     height: 350px;
 }
 .right{
@@ -154,13 +156,14 @@ input{
     width: auto;
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
-    border: 1px solid #22467D;
+    border: 1px solid #193257;
 }
 .submitbtn input[type="submit"]:hover{
-    background-color: #BDC8D9;
+    background-color: #54777D;
+    color: white;
 }
 hr{
     width: 100%;
-    border-color: #22467D;
-    background-color: #22467D;
+    border-color: #193257;
+    background-color: #193257;
 }
