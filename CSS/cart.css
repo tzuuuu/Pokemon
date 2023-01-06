@@ -179,3 +179,10 @@ hr{
     border-color: #193257;
     background-color: #193257;
 }
+.pay,.delivery{
+    display: flex;
+    align-items: center;
+}
+.pay p,.delivery p{
+    margin: 10px;
+}
