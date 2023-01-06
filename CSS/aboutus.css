@@ -145,7 +145,7 @@ h4{
 } */
 .wordone{
   font-size: 13px;
-  font-family: DFKai-sb;
+  /* font-family: DFKai-sb; */
 }
 /* .wordtwo{
   font-size: 15px;
@@ -167,4 +167,13 @@ h1{
 
 .rule{
   font-family:  DFKai-sb;
+}
+
+.policy-text{
+  text-indent: 10em;
+}
+
+.word,.wordone,.wordtwo{
+  text-align: justify;
+  font-family: DFKai-sb;
 }
