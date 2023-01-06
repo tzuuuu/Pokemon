@@ -65,6 +65,18 @@
     height: 30px;
     width: 30%;
 }
+.checknum{
+    height: 30px;
+    width: auto;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #193257;
+    background-color: white;
+}
+.checknum:hover{
+    background-color: #E7E3C5;
+}
 .product .minusbtn,
 .product .plusbtn {
     width: 30px;
@@ -85,7 +97,7 @@
 } 
 .info {
     display:flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
 }
 
