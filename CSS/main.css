@@ -20,6 +20,7 @@
     padding: 5px;
     width: 100%;
     margin: 0;
+    font-family: Lucida Console;
 }
 
 /* header */
@@ -223,6 +224,9 @@
     border-radius: 15px;
 }
 
+.head{
+    font-family: Impact;
+}
 
 
 
