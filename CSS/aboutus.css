@@ -82,9 +82,16 @@
 .memberItemBack {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+.memberItemBack p{
+  margin: 10px auto 10px auto;
+}
+.memberItemBack h4{
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .memberItemFront {
@@ -94,7 +101,7 @@
 .memberItemBack {
   /* width: 100%;
     height: 100%; */
-  background-color:rgb(255, 255, 255);
+  background-color: #BDC8D9;
   color: black;
   transform: rotateY(180deg);
 }
