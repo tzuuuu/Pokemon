@@ -7,10 +7,11 @@
     justify-content: center;
     width: 70%;
     margin: 50px auto;
-    border: 3px solid #22467D;
+    border: 3px solid #193257;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
+    background-color: #FEFFE4;
 }
 
 
@@ -18,8 +19,8 @@
 label {
     width: 46%;
     cursor: pointer;
-    background: white;
-    color: black;
+    background: #54777D;
+    color: white;
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
@@ -30,6 +31,7 @@ label {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 10px;
+    opacity: 0.5;
 }
 
 @media screen and (max-width:768px){
@@ -40,19 +42,22 @@ label {
 
 input{
     border-radius: 5px;
-    background-color: white;
+    background-color: #FEFFE4;
 }
+
 
 
 
 
 
 label:hover {
-    background: #BDC8D9;
+    background: #54777D;
+    animation:scale-up-center .4s
 }
 
 input:checked+label {
-    background: #BDC8D9;
+    background: #54777D;
+    opacity: 1;
 }
 
 .tabs input:nth-of-type(1):checked~.panels .register:first-child,
@@ -63,11 +68,11 @@ input:checked+label {
 }
 
 .panels {
-    border-top: 2px solid #22467D;
+    border-top: 2px solid #193257;
     border-radius: 0 0 15px 15px;
     clear: both;
     width: 100%;
-    background: white;
+    background-color: #FEFFE4;
     text-align: center;
     line-height: 40px;
     height: 500px;
@@ -78,8 +83,9 @@ input:checked+label {
 
 input{
     height: 20px;
-    border: 1px solid #22467D;
+    border: 1px solid #193257;
     border-radius: 5px;
+    background-color: white;
 }
 
 
@@ -87,7 +93,7 @@ input{
     width: 100%;
     opacity: 0;
     display: none;
-    background: white;
+    background: #FEFFE4;
     border-radius: 15px;
 }
 
@@ -95,7 +101,7 @@ input{
     width: 100%;
     opacity: 0;
     display: none;
-    background: white;
+    background: #FEFFE4;
     border-radius: 15px;
     line-height: 60px;
 }
@@ -108,7 +114,9 @@ input{
     padding: 5px 20px 5px 20px;
     height: auto;
     width: auto;
+    background-color: white;
 }
 .submit:hover{
-    background-color: #BDC8D9;
+    background-color: #54777D;
+    color: white;
 }
