@@ -21,6 +21,15 @@
     width: 100%;
     margin: 0;
     font-family: Lucida Console;
+    font-weight: 700;
+}
+@font-face {
+    font-family: poke1;
+    src: url(../word/Pokemon\ Solid.ttf);
+}
+@font-face {
+    font-family: poke2;
+    src: url(../word/Pokemon\ Hollow.ttf);
 }
 
 /* header */
@@ -59,6 +68,7 @@
     margin: 5px;
 }
 
+
 /* nav */
 
 .mode2{
@@ -69,7 +79,7 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    border-bottom: 3px solid #22467D;
+    border-bottom: 3px solid #193257;
     margin: 0;
     padding: 0;
 }
@@ -122,7 +132,7 @@
     position: absolute;
     background-color: white;
     z-index: 2;
-    border: 1px solid #22467D
+    border: 1px solid #193257
 }
 .dropdown-content a {
     padding: 12px 12px;
@@ -140,7 +150,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #FCEEBF ;
+    background-color: #EADB9D ;
     border-radius: 50%;
     z-index: 50;
 }
@@ -148,10 +158,10 @@
 .footer{
     height: 100px;
     padding: 10px;
-    background-color: #22467D;
+    background-color: #193257;
 }
 .footer p{
-    background-color: #22467D;
+    background-color: #193257;
     color: white;
     letter-spacing: 5px;
     text-align: center;
@@ -167,19 +177,28 @@
     margin: 30px auto 30px auto;
     max-width: fit-content;
 }
+.carousel-control-prev{
+    background-color: white;
+    opacity: 1;
+}
    /* Hot */
 .hot{
     height: auto;
     margin: 50px;
     padding: 30px;
-    border: 3px solid #22467D;
+    border: 3px solid #193257;
     border-radius: 15px;
+    background-color: #FEFFE4;
 }
 .hot-t{
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
+    font-family: poke1;
+    letter-spacing: 8px;
+    color: #FCD147;
+    -webkit-text-stroke: 5px #193257;
 }
 .hot-items{
     display: flex;
@@ -194,7 +213,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid #22467D;
+    border-bottom: 2px solid #193257;
 }
 .hot-pic{
     height: 400px;
@@ -206,14 +225,21 @@
     font-size: 30px;
     margin: 0;
     padding: 0;
+    font-weight: 600;
+    color: #54777D;
+    -webkit-text-stroke: 2px #193257;
 }
 .hot-pic:hover{
-    animation:scale-up-center .4s
+    animation:scale-up-center .4s;
 }
 .name{
     font-size: 30px;
     text-align: center;
+    background-color: #54777D;
+    border-radius: 5px;
+    color: white;
 }
+  
 
 
 /* New */
@@ -221,12 +247,15 @@
     height: auto;
     margin: 50px;
     padding: 30px;
-    border: 3px solid #22467D;
+    border: 3px solid #193257;
     border-radius: 15px;
+    background-color: #FEFFE4;
 }
 
 .head{
     font-family: Impact;
+    padding: 0;
+    margin: 0;
 }
 
 
