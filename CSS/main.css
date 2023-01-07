@@ -14,14 +14,15 @@
     z-index: 99;
 }
 .ontop{
-    background-color: #BDC8D9;
+    background-color: #193257;
+    color: white;
     text-align: center;
     size: 30px;
     padding: 5px;
     width: 100%;
     margin: 0;
     font-family: Lucida Console;
-    font-weight: 700;
+    font-weight: bolder;
 }
 @font-face {
     font-family: poke1;
