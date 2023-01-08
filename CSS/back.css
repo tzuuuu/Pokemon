@@ -57,6 +57,7 @@ input:checked+label {
 
 .tabs input:nth-of-type(1):checked~.panels .upload:first-child,
 .tabs input:nth-of-type(2):checked~.panels .res:nth-child(2),
+.tabs input:nth-of-type(3):checked~.panels .order:nth-child(3),
 .tabs input:nth-of-type(4):checked~.panels .panel:last-child {
     opacity: 1;
     display: block;
@@ -70,7 +71,7 @@ input:checked+label {
     background: white;
     text-align: center;
     line-height: 40px;
-    height: 800px;
+    height: 1000px;
     display: flex;
     align-items: center;
     letter-spacing: 3px;
@@ -106,7 +107,7 @@ input[type="submit"]:hover{
     border-radius: 15px;
 }
 
-.res{
+.res,.order{
     width: 100%;
     opacity: 0;
     display: none;
@@ -114,7 +115,7 @@ input[type="submit"]:hover{
     border-radius: 15px;
     line-height: 60px;
 }
-.res table{
+.res table,.order table{
     width: 100%;
     text-align: center;
 }
@@ -122,7 +123,7 @@ input[type="submit"]:hover{
     width: 200px;
     margin-right: 10px;
 }
-.res table th{
+.res table th,.order table th{
     font-weight: bolder;
     font-size: 20px;
 }
