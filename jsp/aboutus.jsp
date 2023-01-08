@@ -1,0 +1,248 @@
+<%@page contentType="text/html;charset=utf-8" language="java" import="java.sql.*"%>
+<%@include file="config.jsp" %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偷走你的寶</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/aboutus.css">
+    <link rel="shortcut icon" href="../image/icon.ico">
+</head>
+
+<body>
+   <!--網頁標頭開始-->
+    <div id="gotop"></div>
+    <div id=fixed>
+        <p class="ontop">HAPPY 2023 NEW YEAR SALE!</p>
+    <!-- <header>
+        <p class="ontop">HAPPY 2023 NEW YEAR SALE!</p>
+        <div class="mode1">
+            <div class="logopic"><a href="index.html"><img src="../image/logo.png" alt="logo"></a></div>
+            <ul class="list">
+                <li><a href="shoppingcart.html"><img src="../image/shoppingcart_icon.png" alt="Shopping Cart"></a></li>
+                <li><a href="login.html"><img src="../image/user_icon.png" alt="User"></a></li>
+                <li><a href="mailto:11044114@o365st.cycu.edu.tw?Subject=我的意見"><img src="../image/email_icon.png" alt="Email"></a></li>
+            </ul>
+        </div>
+    </header> -->
+    <nav>
+        <ul class="mode2">
+            <li>
+                <div class="logopic"><a href="index.jsp"><img src="../image/logo.png" alt="logo"></a></div>
+            </li>
+            <li><a href="index.jsp#newin"><p class="head">New In</p></a></li>
+            <li><a href="index.jsp#hot"><p class="head">Hot!</p></a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="product.jsp"><p class="head">All Product</p></a>
+                    <div class="dropdown-content">
+                        <a href="product.jsp?q=1">火/水/草/雷</a>
+                        <a href="product.jsp?q=2">格鬥/一般</a>
+                        <a href="product.jsp?q=3">飛行/幽靈</a>
+                        <a href="product.jsp?q=4">伊布</a>
+                        <a href="product.jsp?q=5">神獸</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="aboutus.jsp"><p class="head">About Us</p></a></li>
+            <!-- <li><a href="member.html">Member</a></li> -->
+            <!--<div>
+                <div class="search">
+                    <img src="../image/search_icon.png" alt="search">
+                    <input type="text" name="search" placeholder="Search">
+                </div>-->
+            <div class="icon-list">
+                <a href="shoppingcart.jsp"><img src="../image/shoppingcart_icon.png" alt="Shopping Cart"></a>
+                <%
+				Object usin=session.getAttribute("email");   
+				if (usin!= null){
+				out.print("<a href='member.jsp'><img src='../image/user_icon.png' alt='User'></a>");
+				}
+				else
+				out.print("<a href='login.jsp'><img src='../image/user_icon.png' alt='User'></a>");
+				%>
+                <a href="mailto:11044114@o365st.cycu.edu.tw?Subject=我的意見"><img src="../image/email_icon.png" alt="Email"></a>
+                <%  
+				if (usin!= null){
+				out.print("<a href='logout.jsp'><img src='../image/logout_icon.png' alt='Logout'></a>");
+				}
+				%>
+            </div>
+        </ul>
+    </nav>
+    </div>
+    <div class="gotop">
+        <a href="#gotop" class="goTopBtn"><img src="../image/up_icon.png" alt="Back To Top"></a>
+    </div>
+    <!--網頁標頭結束-->
+    <section class="slogan">
+        <h1 style="font-family:DFKai-sb;">\ 品牌理念 /</h1>
+        <p class="slogan1"><h1 style="text-align: center;font-family:DFKai-sb;">寶護你可望成為大師的夢想，不管是6歲還是60歲的你—都值得擁有！</h1></p>
+            <br>寶可夢是闔家觀賞的動畫，近年來也成為家喻戶曉的熱門手遊</br>
+            <br>在《寶可夢》中，任何人都可以和精靈寶可夢們一同冒險，完成地區圖鑑，並通過收集、交換和對戰來變得更強，最終成為寶可夢大師。</br>
+            <br>而我們的初衷是讓世界上的所有人都能體驗一次抓寶的樂趣</br>
+            <br>成為寶可夢大師的目標不再是夢想，人人都可以成為小智和皮卡丘！</br></p>
+    </section>
+
+    <section class="member">
+        <h1 style="text-align: center;font-family:DFKai-sb;">\ 網站成員 /</h1>
+        <h3>前端</h3>
+        <div class="memberList">
+            <div class="memberItem">
+                <div class="memberItemInner">
+                    <div class="memberItemFront">
+                        <img src="../image/辜.jpg" style="width: 300px; height: 300px" />
+                     </div>
+                    <div class="memberItemBack">
+                        <h4>辜麗慈</h4>
+                        <p class="wordone">這次的期末專案是我既期待又害怕的作業，期待不知道自己能做出什麼樣的網頁， 
+                            又害怕自己其實根本就學的不夠透徹。 
+                            在整個製作過程中有兩個難題，第一個是架前端的過程，儘管期中寫過單面式履歷， 
+                            但期末要交一份複合式網頁，每一頁的連結、按鈕都要反覆再三確認都有串接在一起。 
+                            接著是排版：要怎麼讓物件呈現自己心中所想的樣子， 
+                            因為能達成目的方法有非常多，每一種方法在網頁中堆疊起來可能更沒辦法好好的呈現效果， 
+                            練習中我漸漸找到屬於自己的架設方式，讓我的coding風格在後期也能慢慢統一。 
+                            而第二個是前後端程式碼的整合，如果兩邊一起進行，程式碼傳來傳去衍生出相當多的版本，造成混亂， 
+                            希望老師們可以在下學期教授好方法可以一起同步，讓效率事半功倍。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="memberItem">
+                <div class="memberItemInner">
+                    <div class="memberItemFront">
+                        <img src="../image/王.jpg" style="width: 300px; height: 300px" />
+                     </div>
+                    <div class="memberItemBack">
+                        <h4>王安純</h4>
+                        <p class="wordtwo">這學期初得知要做出一個電商平台的網頁時，就覺得期末專案對我們來說是一大挑戰，雖然我對於程式比較不那麼熟練，也因為這樣而害怕自己會做不出好的網頁，但是我對網頁的美編和動畫很有興趣，所以我認為只要願意努力學習一定能夠做出來。期末專案從0到現在變成一個完整的網站，看到成果的我感到很欣慰也很有成就感，讓我學到了很多相關知識，希望未來可以學以致用。還要謝謝我的組員們，沒有你們就沒有現在的成果，也謝謝後端乙班同學的包容！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="memberItem">
+                <div class="memberItemInner">
+                    <div class="memberItemFront">
+                        <img src="../image/陳.jpg" style="width: 300px; height: 300px" />
+                     </div>
+                    <div class="memberItemBack">
+                        <h4>陳奇炫</h4>
+                        <p class="wordtwo">這次的期末專案對我來說是一個很大的挑戰，因為要跟別班的同學去溝通協調來去完成這次的專案，因為我的能力沒有到很強能做的事情非常有限，所以剛開始的時候我是非常擔心的，很怕會被一直指指點點哪裡要怎麼寫哪裡要怎麼改，但好在我的組員人都非常的好，會給我足夠的時間去解決我要做的部分，還有遇到不會的地方也會協助我來去更改，讓我更了解程式碼如何去寫會更容易的解決問題，這次的專案給我的收穫真的非常的多。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>後端</h3>
+        <div class="memberList">
+            <div class="memberItem">
+                <div class="memberItemInner">
+                    <div class="memberItemFront">
+                        <img src="../image/張.jpg" style="width: 300px; height: 300px" />
+                     </div>
+                    <div class="memberItemBack">
+                        <h4>張伃倢</h4>
+                        <p class="word">在這一次的合作上我真的獲益良多，從一開始搞不清楚狀況到後來漸漸知道自己該做些什麼事，當知道自己應該用些什麼時，才會知道要怎麼和其他人溝通。剛開始因為甲乙兩班都只有學過自己班上的東西，所以不清楚對方要的內容是什麼，再加上時間有點急促的情況下，真的讓人措手不及。不過在這之中，我也對於這些程式碼的運用更加熟悉，更知道自己上課的內容可以運用在什麼樣的地方，以及團隊合作的重要性! 
+                            我很慶幸我的兩位組員都很認真，當我有問題的時候也伸出援手來救我，感動到痛哭流涕，真的是遇到很棒的組員，才能讓我在這次的專題上有依靠的感覺~~~!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="memberItem">
+                <div class="memberItemInner">
+                    <div class="memberItemFront">
+                        <img src="../image/傅.jpg" style="width: 300px; height: 300px" />
+                     </div>
+                    <div class="memberItemBack">
+                        <h4>傅苡</h4>
+                        <p class="wordtwo">這次的期末報告對我來說算是一個很大的挑戰，畢竟要從無到有建構出一個網站，平常看一般的網站都覺得沒什麼，可是真的建構起來真的是一個大問題，中間真的有超多細節要處理。這次還有機會可以跟甲班一起合作弄這個網站，我一開始還不知道前端是幹嘛的，所以我在做後端的時候對於會不會弄到前段的東西還有點苦惱，但還好甲班的同學都很好溝通，很快就可以解答我的疑問。還有我乙班的組員，其他兩個真的很認真在處理這些細節，讓我可以很放心地去做我應該打的程式碼。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="memberItem">
+                <div class="memberItemInner">
+                    <div class="memberItemFront">
+                        <img src="../image/謝.jpg" style="width: 300px; height: 300px" />
+                     </div>
+                    <div class="memberItemBack">
+                        <h4>謝茗沂</h4>
+                        <p class="wordtwo">其實一開始知道要做這個專題的時候還挺期待，因為這是第一支由我們自己完成的程式，但剛開始做的時候，我還有點不知所措，不知道我們到底要怎麼做，如何跟前端的銜接上，要謝謝我的組員告訴我我們可以做些什麼，然候也在做這些的過程中更加理解平常所學，並能夠將所學運用出來，而不是紙上談兵，獲益良多，雖然有點燒腦有點難，但每次完成一個部分內心都會有小小的滿足感與成就感，我相信當所有都做完之後，就會得到滿滿的成就感了。最後要謝謝老師，謝謝所有組員們，還要謝謝組外的支援。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="policy" id="policy">
+        <h1>\ 購買須知 /</h1>
+        <p><br><h2>購物流程：</h2>
+            <br>1.加入會員（可以查詢訂單進度）</br>
+            <br>2.選購商品數量（如有多筆訂單請注意是否有重複商品，提醒您訂單都無法做異動，以訂單內容物為主）。</br>
+            <br>3.確定金額及數量正確/購物車結帳。</br>
+            <br>4.選擇付款方式及配送方式。</br>
+            <br><h2>付款方式</h2>
+            <br>A. 網銀、ATM轉帳付款</br>
+            <br>B. 信用卡付款</br>
+            <br><h2>配送方式</h2>
+            <br>A. 電子信箱</br>
+            <br>B. POKEMON GO APP</br>
+            <br><h2>退換貨／退款</h2>
+            <br>從商品抵達您手上開始，您即擁有七天鑑賞期 （含例假日），國定假日及週末客服不上班，欲退換貨敬請注意時間。</br>
+            <br>若有任何問題，請隨時與我們聯繫</br>
+            </p>
+    </section>
+
+    <!--網頁尾端開始-->
+    <footer class="footer">
+        <p>Copyright©2022 Stealing your Pokemon<br>All rights reserved</p>
+        <p><%
+  
+  
+  String strNo = (String)application.getAttribute("counter");//讀application變數
+  int counter = Integer.parseInt(strNo); //轉成整數
+  if (session.isNew()){
+  counter++;}                                        //計數器加1
+  strNo = String.valueOf(counter);
+  application.setAttribute("counter", strNo);//寫application變數
+%>
+瀏覽次數<%= counter %></p>
+    </footer>
+    <!--網頁尾端結束-->
+    <script>
+        const queryStr = new URL(window.location.href).searchParams.get('q')
+        console.log(queryStr)
+       
+        function render(){
+                clearContent();
+                if(queryStr == 1 || queryStr==null){
+                    q1.style.display = "block";
+                    return;
+                }
+                if(queryStr == 2){
+                    q2.style.display = "block";
+                    return;
+                }
+                if(queryStr == 3){
+                    q3.style.display = "block";
+                    return;
+                }
+                if(queryStr == 4){
+                    q4.style.display = "block";
+                    return;
+                }
+                if(queryStr == 5){
+                    q5.style.display = "block";
+                    return;
+                }
+        }
+        render();
+        function clearContent(){
+                q1.style.display = "none";
+                q2.style.display = "none";
+                q3.style.display = "none";
+                q4.style.display = "none";
+                q5.style.display = "none";
+        }
+    </script>
+</body>
